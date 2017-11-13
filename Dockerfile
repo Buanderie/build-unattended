@@ -3,7 +3,7 @@ FROM ubuntu:zesty
 RUN apt-get update && apt-get -y upgrade
 
 # Install the following utilities (required by poky)
-# RUN apt-get install -y build-essential chrpath curl diffstat gcc-multilib gawk git-core libsdl1.2-dev texinfo unzip wget xterm dos2unix git mkisofs syslinux-utils syslinux
+RUN apt-get install -y build-essential chrpath curl diffstat gcc-multilib gawk git libsdl1.2-dev texinfo unzip wget xterm dos2unix git mkisofs syslinux-utils syslinux qt5-default qtmultimedia5-dev libqt5multimediawidgets5 libqt5multimedia5-plugins libqt5multimedia5 net-tools git build-essential cmake libnl-3-dev libnl-genl-3-dev libnl-nf-3-dev libssl-dev libpcap-dev gstreamer1.0-plugins-bad gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly libgstrtspserver-1.0-de
 
 # Additional host packages required by poky/scripts/wic
 # RUN apt-get install -y bzip2 dosfstools mtools parted syslinux tree
